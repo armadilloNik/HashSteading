@@ -4,7 +4,10 @@
 [<EntryPoint>]
 let main argv = 
   
-    let token = Host.Start
+   
+    let token = Host.Start Repo.GetFileList
+
+
     Console.ReadKey true |> ignore
     
     token.Cancel()

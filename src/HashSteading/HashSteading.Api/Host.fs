@@ -4,10 +4,10 @@
     open System.Threading
     open Suave
     
-    let Start =
+    let Start content =
         let cts = new CancellationTokenSource()
         let conf = { defaultConfig with cancellationToken = cts.Token }
-        let listening, server = startWebServerAsync conf (Successful.OK "Hello World")
-    
+        let listening, server = startWebServerAsync conf (Successful.OK content)
+        
         Async.Start(server, cts.Token)
         cts

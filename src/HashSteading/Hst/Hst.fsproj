@@ -80,6 +80,11 @@
       <Project>{d2c27931-53c9-44fc-a6a4-f746bbc3f42c}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\HashSteading\HashSteading.fsproj">
+      <Name>HashSteading</Name>
+      <Project>{011fad96-5a85-40db-bcba-20f324a46db5}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
