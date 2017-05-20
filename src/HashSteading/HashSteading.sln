@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hst", "Hst\Hst.fsproj", "{C
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HashSteading.Tests", "HashSteading.Tests\HashSteading.Tests.fsproj", "{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HashSteading.Api", "HashSteading.Api\HashSteading.Api.fsproj", "{D2C27931-53C9-44FC-A6A4-F746BBC3F42C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C27931-53C9-44FC-A6A4-F746BBC3F42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C27931-53C9-44FC-A6A4-F746BBC3F42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C27931-53C9-44FC-A6A4-F746BBC3F42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C27931-53C9-44FC-A6A4-F746BBC3F42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
