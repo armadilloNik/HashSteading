@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HashSteading", "HashSteading\HashSteading.fsproj", "{011FAD96-5A85-40DB-BCBA-20F324A46DB5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hst", "Hst\Hst.fsproj", "{C3989442-6BBA-4D9E-9D74-1234850F0AC1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HashSteading.Tests", "HashSteading.Tests\HashSteading.Tests.fsproj", "{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{011FAD96-5A85-40DB-BCBA-20F324A46DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011FAD96-5A85-40DB-BCBA-20F324A46DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011FAD96-5A85-40DB-BCBA-20F324A46DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011FAD96-5A85-40DB-BCBA-20F324A46DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3989442-6BBA-4D9E-9D74-1234850F0AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3989442-6BBA-4D9E-9D74-1234850F0AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3989442-6BBA-4D9E-9D74-1234850F0AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3989442-6BBA-4D9E-9D74-1234850F0AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1004BA-60F0-4A5A-AEE3-12AB33A33865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
