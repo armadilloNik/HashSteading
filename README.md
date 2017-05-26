@@ -1,5 +1,2 @@
-![Alt text](/hashsteadingLogo.png "HashSteading") test
-test
-test
-
+![Alt text](/hashsteadingLogo.png "HashSteading")
 
