@@ -1,10 +1,13 @@
 ﻿open System
 
-
 [<EntryPoint>]
 let main argv = 
   
-    let token = Host.Start Repo.GetFileList
+    let path = @"c:\temp\HashSteading\"
+
+    let token = path 
+                |> Repo.GetFileList 
+                |> Host.Start
 
     Console.ReadKey true |> ignore
     
