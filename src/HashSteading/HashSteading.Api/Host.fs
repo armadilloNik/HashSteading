@@ -10,4 +10,5 @@
         let listening, server = startWebServerAsync conf (Successful.OK content)
         
         Async.Start(server, cts.Token)
+        System.Diagnostics.Process.Start("http://localhost:8080") |> ignore
         cts
