@@ -1,4 +1,8 @@
-﻿namespace HashSteading.Tests
+﻿
+namespace XTest
+open Xunit
 
-type Class1() = 
-    member this.X = "F#"
+module Test = 
+
+    [<Fact>]
+    let testRunner = Assert.True(true)
