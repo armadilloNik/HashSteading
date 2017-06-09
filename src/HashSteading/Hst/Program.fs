@@ -17,7 +17,7 @@ let rec parse items func =
                           func()
         | "list"::tail -> Repo.PrintList() |> ignore
                           func()
-        | "clear"::tail -> System.Console.Clear |> ignore
+        | "clear"::tail -> System.Console.Clear() |> ignore
                            func()
         | _ ->  printfn "Invalid Command"
                 func()
