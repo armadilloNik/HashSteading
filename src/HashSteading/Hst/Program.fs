@@ -6,14 +6,17 @@ let prompt() =
     let input = Console.ReadLine() 
     input
 
-let rec promptMonitor() =
-    let input = prompt().ToLower()
-    let items = input.Split ' ' |> Array.toList
+let rec parse items func =
     match items with
         | "exit"::tail -> ()
         | "repo"::tail -> Console.WriteLine "repo!"
-                          promptMonitor()
-        | _ -> promptMonitor()
+                          func()
+        | _ -> func()
+
+let rec promptMonitor() =
+    let input = prompt().ToLower()
+    let items = input.Split ' ' |> Array.toList
+    parse items promptMonitor
           
 
 [<EntryPoint>]
