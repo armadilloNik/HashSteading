@@ -14,3 +14,5 @@
                         |> Seq.map listItem 
                         |> String.concat ""
                         |> htmlGen
+    
+    let Create name = printfn "Creating Repo: %s" name

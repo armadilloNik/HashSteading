@@ -9,7 +9,8 @@ let prompt() =
 let rec parse items func =
     match items with
         | "exit"::tail -> ()
-        | "repo"::tail -> Console.WriteLine "repo!"
+        | "repo"::tail -> parse tail func
+        | "init"::tail -> tail |> List.head |> Repo.Create 
                           func()
         | _ -> func()
 
