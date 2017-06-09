@@ -1,6 +1,6 @@
 ![Alt text](/hashsteadingLogo.png "HashSteading")
 
-## As our dependence on distributed software systems grows so does the necessity to feed and care for the data that lives within them. ## 
+### As our dependence on distributed software systems grows so does the necessity to feed and care for the data that lives within them. ### 
 
 ### If you share a collection of data will it be available next year? ten years from now? 20? ###
 ### Will that data still maintain its integrity? ###
