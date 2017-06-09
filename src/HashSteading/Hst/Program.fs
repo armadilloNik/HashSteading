@@ -10,9 +10,17 @@ let rec parse items func =
     match items with
         | "exit"::tail -> ()
         | "repo"::tail -> parse tail func
-        | "init"::tail -> tail |> List.head |> Repo.Create 
+        | "init"::tail -> tail 
+                            |> List.head 
+                            |> Repo.Create  
+                            |> ignore
                           func()
-        | _ -> func()
+        | "list"::tail -> Repo.PrintList() |> ignore
+                          func()
+        | "clear"::tail -> System.Console.Clear |> ignore
+                           func()
+        | _ ->  printfn "Invalid Command"
+                func()
 
 let rec promptMonitor() =
     let input = prompt().ToLower()
@@ -25,10 +33,6 @@ let main argv =
     
     promptMonitor()
     
-
-    Console.WriteLine "done!" |> ignore
-    Console.ReadKey true |> ignore
-
     //let path = @"c:\temp\HashSteading\"
 
     //let token = path 

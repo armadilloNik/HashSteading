@@ -1,6 +1,8 @@
 ﻿module Repo
     open System.IO
 
+    let mutable private _repos = []
+
     let private files path = (path, "*.*", SearchOption.AllDirectories) |> Directory.EnumerateFiles
 
     let private hashItem (hsh, file) = hsh + " [" + file + "] "
@@ -16,3 +18,8 @@
                         |> htmlGen
     
     let Create name = printfn "Creating Repo: %s" name
+                      _repos <- (name::_repos)
+
+    let PrintList() = _repos 
+                    |> List.iter (System.Console.WriteLine)
+                    
