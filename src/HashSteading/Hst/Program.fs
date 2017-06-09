@@ -8,14 +8,13 @@ let prompt() =
 
 let rec promptMonitor() =
     let input = prompt().ToLower()
-    match input with
-        | "exit" -> ()
-        | "repo" -> Console.WriteLine "repo!"
-                    promptMonitor()
+    let items = input.Split ' ' |> Array.toList
+    match items with
+        | "exit"::tail -> ()
+        | "repo"::tail -> Console.WriteLine "repo!"
+                          promptMonitor()
         | _ -> promptMonitor()
           
-    //if input = "exit" then ()
-    //else promptMonitor()
 
 [<EntryPoint>]
 let main argv = 
